@@ -7,7 +7,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function(){
-     
             $("button#startAnimation").click(function(){
                 $("div").animate({
                     left: '250px',
@@ -16,8 +15,6 @@
                     width: '150px'
                 });
             });
-
-     
             $("button#stopAnimation").click(function(){
                 // Stop the animation and reset CSS properties
                 $("div").stop().css({
@@ -27,18 +24,12 @@
                     width: '100px'
                 });
             });
-
-          
             $("div").mouseenter(function(){
                 $(this).css("background-color", "#FF5733");
             });
-
-         
             $("div").mouseleave(function(){
                 $(this).css("background-color", "#125f21");
             });
-
-      
             $("button#toggleVisibility").click(function(){
                 $("div").toggle();
             });
